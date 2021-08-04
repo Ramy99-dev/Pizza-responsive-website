@@ -110,9 +110,15 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background: white;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
   border: 2px solid black;
+}
+
+.card-service img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .card-service p {

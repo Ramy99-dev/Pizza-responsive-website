@@ -19,7 +19,12 @@ body {
     display: flex;
     flex-direction: column;
     background: white;
-    flex-basis: 250px;
+    flex-basis: 500px;
+    img{
+        width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
    
     border:2px solid black;
     p{
