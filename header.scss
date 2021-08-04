@@ -3,6 +3,7 @@ header {
     flex-basis: 500px;
     background-size: cover;
     flex-grow: 3;
+    
     .banner-text {
         display: flex;
         flex-direction: column;
@@ -28,7 +29,7 @@ header {
     .nav-brand {
         flex-basis: 20%;
         img {
-            width: 200px;
+            width: 80px;
         }
     }
     ul {
@@ -39,6 +40,7 @@ header {
         gap: 80px;
         list-style-type: none;
         li {
+            cursor: pointer;
             font-family: "Bebas Neue";
             color: black;
             font-size: 20px;

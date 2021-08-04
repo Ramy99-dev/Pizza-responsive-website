@@ -52,7 +52,7 @@ header .banner-text h3 {
 }
 
 .nav-bar .nav-brand img {
-  width: 200px;
+  width: 80px;
 }
 
 .nav-bar ul {
@@ -70,9 +70,14 @@ header .banner-text h3 {
 }
 
 .nav-bar ul li {
+  cursor: pointer;
   font-family: "Bebas Neue";
   color: black;
   font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -109,10 +114,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: white;
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
   border: 2px solid black;
+  border-bottom: none;
 }
 
 .card-service img {
@@ -122,8 +131,149 @@ body {
 }
 
 .card-service p {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   text-align: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 2px solid black;
+}
+
+.categorie {
+  list-style-type: none;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  background: #FF6347;
+}
+
+.categorie li {
+  cursor: pointer;
+  text-align: center;
+  border-top: 1px solid black;
+  font-family: "Bebas Neue";
+  color: black;
+  font-size: 20px;
+  padding: 45px;
+}
+
+.categorie li:hover {
+  background: black;
+  color: white;
+}
+
+.product {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  border: 2px solid black;
+}
+
+.card-product .card-img {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-top: 2rem;
+}
+
+.card-product img {
+  width: 100%;
+  height: 200px;
+  max-width: 400px;
+}
+
+.card-product p {
+  font-family: "Bebas Neue";
+  text-align: center;
+}
+
+.banner {
+  background-image: url("assets/banner.jpg");
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  height: 700px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-size: cover;
+}
+
+.banner .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.banner .banner-text h1,
+.banner .banner-text h3 {
+  font-family: "Bebas Neue";
+  color: #FF6347;
+  text-shadow: 2px 2px wheat;
+  font-size: 150px;
+  margin: 0px;
+}
+
+.banner .banner-text h3 {
+  color: black;
+  font-size: 40px;
+}
+
+.footer {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  background: #101010;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Bebas Neue";
+  color: wheat;
 }
 
 @media all and (max-width: 1529px) {
@@ -131,6 +281,35 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .categorie {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content .categorie li {
+    padding: 10px;
+  }
+  .content .product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner .banner-text h1 {
+    font-size: 60px;
+  }
+  .banner .banner-text h3 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
