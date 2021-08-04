@@ -39,11 +39,15 @@ header {
         flex-wrap: wrap;
         gap: 80px;
         list-style-type: none;
+        a{
+            text-decoration: none;
+        }
         li {
             cursor: pointer;
             font-family: "Bebas Neue";
             color: black;
             font-size: 20px;
+            
         }
     }
 }
