@@ -77,22 +77,8 @@ header .banner-text h3 {
   cursor: pointer;
   font-family: "Bebas Neue";
   color: black;
+  text-shadow: 1px 1px white;
   font-size: 20px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .services {
@@ -278,6 +264,21 @@ body {
           align-items: center;
   font-family: "Bebas Neue";
   color: wheat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media all and (max-width: 1529px) {
